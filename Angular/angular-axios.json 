@@ -1,0 +1,30 @@
+[
+        {
+                "id": "e4f53148-89ec-b80c-575e-8873bb87a22c",
+                "path": "api",
+                "paths": [
+                        {
+                                "id": "00e61aa8-a2df-ad25-d117-bd1fc15bb76d",
+                                "path": "controller",
+                                "paths": [
+                                        {
+                                                "id": "5487bc19-1de6-10d9-4fc6-b762d86bf55a",
+                                                "ext": "js",
+                                                "ngen": "Asset",
+                                                "path": "config",
+                                                "initc": "const Sequelize = require(\"sequelize\");\nconst sequelize = require(\"../../config/database\");\nconst { v4: uuidv4 } = require(\"uuid\");\nconst tableName = \"@Function\";\n\nconst @Function = sequelize.define(\n  \"@Function\",\n  {\n    id: {\n      // Unique ID \n      type: Sequelize.STRING,\n      defaultValue: Sequelize.UUIDV4,\n      primaryKey: true,\n    },\n    \n    \n  },\n  {\n    indexes: [],\n    createdAt: \"cdt\",\n    updatedAt: \"ldt\",\n    tableName,\n  }\n);\n \n\nmodule.exports = @Function;",
+                                                "phase": [
+                                                        "Actor",
+                                                        "Model"
+                                                ],
+                                                "filter": {},
+                                                "prompt": "Add following data types in the model with appropriate type, defaultValue and allowNull values, if it doesn't exist already.\n@Model\n",
+                                                "filters": [
+                                                        "Actor"
+                                                ]
+                                        }
+                                ]
+                        }
+                ]
+        }
+]
